@@ -1,4 +1,5 @@
-#1. Write a Python function to find the Max of three numbers
+#1. Write a Python function to find the Max of three numbers.
+
  def maior_numero(num1, num2, num3):
     if num1>=num2>=num3 or num1>=num3>=num2:
         print(f"O maior número é o : {num1}")
@@ -8,6 +9,7 @@
         print(f"O maior número é o : {num3}")
         
 #2. Write a Python function to sum all the numbers in a list.
+
 def soma_list():
     lista = []
     for i in range(5):
@@ -26,8 +28,7 @@ def soma_list():
     print (f"o reverso desse elemento é: {ele2}")
     
     
-    # 5. Write a Python function to calculate the factorial of a number (a non-negative integer).
-    #The function accepts the number as an argument.
+    # 5. Write a Python function to calculate the factorial of a number (a non-negative integer).The function accepts the number as an argument.
     
     def factorial(numero):
     fatorial = 1
@@ -39,29 +40,29 @@ def soma_list():
     return fatorial  
     
     #6. Write a Python function to check whether a number is in a given range.
+    
     def esta(num, lim_inferior, lim_superior):
-    if num in range(lim_inferior, lim_superior):
-        print("Este número está no intervalo")
-    else:
-        print("Esse número não está no intervalo")
+		if num in range(lim_inferior, lim_superior):
+       		print("Este número está no intervalo")
+    	else:
+       		 print("Esse número não está no intervalo")
         
      #7. Write a Python function that accepts a string and calculate 
      #the number of upper case letters and lower case letters.
      
      def quant_letras(frase):
-    letra1 = 0
-    letra2 = 0
-    for l in frase:
-        if l.isupper() == True:
-            letra1 +=1
-        elif  l.islower() == True:
-            letra2 +=1    
+		letra1 = 0
+		letra2 = 0
+		for l in frase:
+			if l.isupper() == True:
+				letra1 +=1
+			elif  l.islower() == True:
+				letra2 +=1    
 
-    return letra1, letra2
+		return letra1, letra2
     
     
-    # 8. Write a Python function that takes a list and returns a new list
-    #with unique elements of the first list.
+    # 8. Write a Python function that takes a list and returns a new list with unique elements of the first list.
     
     def lista(string):
     lista1 = string.split()
@@ -72,9 +73,8 @@ def soma_list():
     
     return lista2
     
-    #9. Write a Python function that takes a number as a parameter and check
-    #the number is prime or not.
-    
+    #9. Write a Python function that takes a number as a parameter and check the number is prime or not.
+	
 #esse foi um dos códigos mais difíceis que eu fiz até agora.
 #Pensar em como passar do papel pro computador, foi trabalhoso.
 #Mesmo que eu tivesse entendido a questão, confiar que eu ia conseguir 
@@ -97,6 +97,7 @@ def num_primo(num):
             
             
 #10. Write a Python program to print the even numbers from a given list. 
+
 def pares(n):
     pares = []
     for num in n:
@@ -106,6 +107,7 @@ def pares(n):
     
     
 # 11. Write a Python function to check whether a number is perfect or not.
+
 def is_num_perfeito(n):
     soma1 = []
     for i in range (1,n):
@@ -129,6 +131,8 @@ def palindromo(x):
         
         
 #14. Write a Python function to check whether a string is a pangram or not.
+
+
 def pangram():
     abc = "abcdefghijlmnopqrstuvxz"
     abc = set(abc)
@@ -138,8 +142,7 @@ def pangram():
     else:
         return False
         
-#15. Write a Python program that accepts a hyphen-separated sequence of words 
-#as input and prints the words in a hyphen-separated sequence after 
+#15. Write a Python program that accepts a hyphen-separated sequence of words as input and prints the words in a hyphen-separated sequence after 
 #sorting them alphabetically.
 
 def ordem(seq):
@@ -148,8 +151,8 @@ def ordem(seq):
 
     return "-".join(palavra)
     
-#16. Write a Python function to create and print a list where the values are
-# square of numbers between 1 and 30 (both included).
+#16. Write a Python function to create and print a list where the values are square of numbers between 1 and 30 (both included).
+
 def potencia():
     lista = []
     for i in range (1,31):
